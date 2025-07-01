@@ -76,45 +76,179 @@ Include blank lines **before and after** for compatibility.
 Blockquotes can include other Markdown elements, but **not all will render properly**.  
 Test as needed.
 
-# Lists 
-use tabs for nested items
 
-Adding Elements in Lists
-To add another element like a blockquote or code block etc, indent the element four spaces or one tab.
+# Lists
+
+Use tabs for nested items. and **do not indent** the first item of a list. 
+And to add elements like blockquotes or code blocks inside lists, indent them **four spaces** or **one tab**.
 
 ## Unordered Lists
-To create an unordered list, start each item with `*`, `-`, or `+` followed by a space. use any one of these symbols consistently.
+
+Create unordered lists by starting each item with `*`, `-`, or `+` followed by a space. Use only one symbol consistently.
 
 ## Ordered Lists
-To create an ordered list, start each item with `1.` followed by a space.
 
-| 1. | 1)|
-| recommended | not recommended|
+Create ordered lists by starting each item with `1.` followed by a space.
 
-If you need to start an unordered list item with a number followed by a period, you can use a backslash (\) to escape the period.
-`- 1968\. A great year!` => `- 1968. A great year!`
+| Recommended | Not recommended |
+| ----------- | --------------- |
+| `1.`        | `1)`            |
 
+If you want a list item starting with a number and period (not list numbering), escape the period with a backslash:
 
-# code blocks
-To create a code block, use three backticks (` `) or if there is an exitsing bacticked element in that block so use double backtick
+```markdown
+- 1968\. A great year!
+```
 
+renders as:
 
-like:
+* 1968\. A great year!
+
+---
+
+# Code Blocks
+
+Create code blocks using three backticks (\`\`\`).
+If your code contains backticks, use double backticks for the fence:
+
+Example:
+
+```markdown
 ``Use `code` in code block.``
+```
+
+---
+
+# Horizontal Rule (HR)
+
+Create a horizontal rule with **3 or more** asterisks (`***`), dashes (`---`), or underscores (`___`) on a line alone.
+
+Add blank lines **before and after** for best compatibility.
+
+Examples:
+
+```
+***
+
+---
+
+___
+```
+
+---
 
 
-# hr
-To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.For compatibility, put blank lines before and after horizontal rules.
+# Links 
+
+1. **Basic Link**
+
+```markdown
+[Link Text](URL)
+```
+
+2. **Link with title (tooltip)**
+
+```markdown
+[Link Text](URL "Title")
+```
+
+3. **Auto-links for URLs or emails**
+
+```markdown
+<https://example.com>
+<email@example.com>
+```
+
+4. **Formatting links**
+
+* Bold: `**[text](URL)**`
+* Italic: `*[text](URL)*`
+* Code style: ``[`code`](URL)``
+
+5. **Reference-style links** (split in two parts)
+
+* Inline: `[text][label]` or `[text] [label]` (can work with a space or without a space both work)
+* Definition (anywhere in file):
+
+  ```markdown
+  [label]: URL "Optional title"
+  ```
+* Example:
+
+  ```markdown
+  [hobbit-hole][1] when i click this it will take me where the 1 is defined
+  ...
+  [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+  ```
+
+6. **Best Practices**
+
+* Encode spaces as `%20` in URLs
+* Encode parentheses as `%28` and `%29` or use HTML `<a>` tags
+* Avoid spaces in URLs directly
+
+Easy version for **Images in Markdown**:
+
+# Images
+
+* To add an image:
+
+```markdown
+![Alt text](image-url)
+```
+
+* To add a caption, put italic text **below** the image:
+
+```markdown
+![Trail](/path/image.jpg)  
+*This is the caption.*
+```
+
+* To make the image a **link**, wrap the image Markdown in `[ ]` and add the link in `( )`:
+
+```markdown
+[![Alt text](image-url "Image title")](link-url)
+```
+
+Example:
+
+```markdown
+[![Rock](/rock.jpg "Rock photo")](https://example.com)
+```
+
+Done.
 
 
+# Escaping Characters
 
-1. ***
+\* Without the backslash, this would be a bullet in an unordered list.
+The rendered output looks like this:
 
-2. ---
+* Without the backslash, this would be a bullet in an unordered list.
 
-3. ___
+Characters You Can Escape
+You can use a backslash to escape the following characters.
+
+Character	Name
+\	backslash
+`	backtick (see also escaping backticks in code)
+*	asterisk
+_	underscore
+{ }	curly braces
+[ ]	brackets
+< >	angle brackets
+( )	parentheses
+#	pound sign
++	plus sign
+-	minus sign (hyphen)
+.	dot
+!	exclamation mark
+|	pipe (see also escaping pipe in tables)
 
 
-# Links
-To create a link, use the `[]` for hypertext and `()` for the URL.
-like: `[Link Text](https://example.com)` this will look like [Link Text](https://example.com)
+# HTML
+For security reasons, not all Markdown applications support HTML in Markdown documents. When in doubt, check your Markdown application’s documentation. Some applications support only a subset of HTML tags.
+
+Use blank lines to separate block-level HTML elements like <div>, <table>, <pre>, and <p> from the surrounding content. Try not to indent the tags with tabs or spaces — that can interfere with the formatting.
+
+You can’t use Markdown syntax inside block-level HTML tags. For example, <p>italic and **bold**</p> won’t work.
