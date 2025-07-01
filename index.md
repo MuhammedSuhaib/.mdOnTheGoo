@@ -69,14 +69,52 @@ Include blank lines **before and after** for compatibility.
 >>>>>>>>>>>> 12 blockquote  
 >>>>>>>>>>>>> 13 blockquote  
 >>>>>>>>>>>>>> 14 blockquote  
->>>>>>>>>>>>>>> Most renderers support 10–15 levels  
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 100
-
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> VSCode can handle 101+
-
+>>>>>>>>>>>>>>> Most renderers support 10–15 levels  but vscode supports 100 levels.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 100🤯
 ## Blockquotes with Other Elements
 
 Blockquotes can include other Markdown elements, but **not all will render properly**.  
 Test as needed.
+
+# Lists 
+use tabs for nested items
+
+Adding Elements in Lists
+To add another element like a blockquote or code block etc, indent the element four spaces or one tab.
+
+## Unordered Lists
+To create an unordered list, start each item with `*`, `-`, or `+` followed by a space. use any one of these symbols consistently.
+
+## Ordered Lists
+To create an ordered list, start each item with `1.` followed by a space.
+
+| 1. | 1)|
+| recommended | not recommended|
+
+If you need to start an unordered list item with a number followed by a period, you can use a backslash (\) to escape the period.
+`- 1968\. A great year!` => `- 1968. A great year!`
+
+
+# code blocks
+To create a code block, use three backticks (` `) or if there is an exitsing bacticked element in that block so use double backtick
+
+
+like:
+``Use `code` in code block.``
+
+
+# hr
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.For compatibility, put blank lines before and after horizontal rules.
+
+
+
+1. ***
+
+2. ---
+
+3. ___
+
+
+# Links
+To create a link, use the `[]` for hypertext and `()` for the URL.
+like: `[Link Text](https://example.com)` this will look like [Link Text](https://example.com)
