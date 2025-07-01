@@ -54,7 +54,7 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
 
-## Extended Syntax
+## Extended Syntax Working on github
 
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
 
@@ -65,9 +65,10 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 | Header | Title |
 | Paragraph | Text |
 
-### Fenced Code Block
+### Fenced Code Block (Language-specific code block)
+code block with syntax highlighting colors etc
 
-```
+```py
 {
   "firstName": "John",
   "lastName": "Smith",
@@ -75,36 +76,34 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 }
 ```
 
-### Footnote
+### Footnote (not supported in VS Code)
+Footnotes create a reference link that takes you to a note at the bottom of the page, like this:
 
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
 
-### Heading ID
 
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
 
 ### Strikethrough
 
 ~~The world is flat.~~
 
-### Task List
+### Task List (not supported in VS Code)
 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
 
-### Emoji
+### Emoji (not supported in VS Code)
 
 That is so funny! :joy:
 
 (See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+
+
+## Extended Syntax NOT Working on github and VS Code
+
 
 ### Highlight
 
@@ -117,3 +116,15 @@ H~2~O
 ### Superscript
 
 X^2^
+
+
+### Heading ID
+
+### My Great Heading {#custom-id}
+
+### Definition List
+here i dont need to style what is def tile and what is definition it will be rendered as a definition list automatically
+
+
+term
+: definition
