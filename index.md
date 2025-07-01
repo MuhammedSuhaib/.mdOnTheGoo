@@ -64,14 +64,14 @@ Include blank lines **before and after** for compatibility.
 >>>>>>> 7 blockquote  
 >>>>>>>> 8 blockquote  
 >>>>>>>>> 9 blockquote  
->>>>>>>>>> GitHub breaks after 7–10 levels  
+>>>>>>>>>> 10 blockquote  
 >>>>>>>>>>> 11 blockquote  
 >>>>>>>>>>>> 12 blockquote  
 >>>>>>>>>>>>> 13 blockquote  
 >>>>>>>>>>>>>> 14 blockquote  
 >>>>>>>>>>>>>>> Most renderers support 10–15 levels  
->>>>>>>>>>>>>>>> 16 blockquote  
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> VSCode can handle 100+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 100
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> VSCode can handle 101+
 
 ## Blockquotes with Other Elements
 
