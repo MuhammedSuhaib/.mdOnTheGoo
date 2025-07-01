@@ -60,10 +60,28 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Table
 
+```md
+| Syntax | Description |
+| ----------- | ----------- | -----> To dark underline headings
+| Header | Title |
+| Paragraph | Text |
+```
+
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
+
+
+
+You can add a list within a table cell by using HTML tags. bcz directly adding a list elements (`*/-/+`) will not work.
+
+#### Table of Contents
+
+- [Underline](#underline)
+- [Indent](#indent)
+- [Center](#center)
+- [Color](#color)
 
 ### Fenced Code Block (Language-specific code block)
 code block with syntax highlighting colors etc

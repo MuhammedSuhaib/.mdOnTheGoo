@@ -84,7 +84,7 @@ And to add elements like blockquotes or code blocks inside lists, indent them **
 
 ## Unordered Lists
 
-Create unordered lists by starting each item with `*`, `-`, or `+` followed by a space. Use only one symbol consistently.
+Create unordered lists by starting each item with `*`, `-`, or `+` followed by a space. Use one symbol consistently.
 
 ## Ordered Lists
 
