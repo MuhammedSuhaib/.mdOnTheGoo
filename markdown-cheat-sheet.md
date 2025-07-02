@@ -1,9 +1,5 @@
 # Markdown Cheat Sheet
 
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
-
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax/) and [extended syntax](https://www.markdownguide.org/extended-syntax/).
-
 ## Basic Syntax
 
 These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
@@ -11,7 +7,9 @@ These are the elements outlined in John Gruber’s original design document. All
 ### Heading
 
 # H1
+
 ## H2
+
 ### H3
 
 ### Bold
@@ -34,9 +32,9 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ### Unordered List
 
-- First item
-- Second item
-- Third item
+* First item
+* Second item
+* Third item
 
 ### Code
 
@@ -54,37 +52,23 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
 
-## Extended Syntax Working on github
+# Automatic URL to Link
+
+Just paste the URL and it will be converted to a link automatically:
+[http://www.example.com](http://www.example.com)
+
+## Extended Syntax (Working on GitHub)
 
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
 
 ### Table
 
-```md
-| Syntax | Description |
-| ----------- | ----------- | -----> To dark underline headings
-| Header | Title |
-| Paragraph | Text |
-```
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-
-
-You can add a list within a table cell by using HTML tags. bcz directly adding a list elements (`*/-/+`) will not work.
-
-#### Table of Contents
-
-- [Underline](#underline)
-- [Indent](#indent)
-- [Center](#center)
-- [Color](#color)
+* [Click here for Tables](tables.md#tables)
 
 ### Fenced Code Block (Language-specific code block)
-code block with syntax highlighting colors etc
+
+Code blocks with syntax highlighting can be done using either backticks or tildes.
+Backticks are more common and recommended.
 
 ```py
 {
@@ -95,54 +79,61 @@ code block with syntax highlighting colors etc
 ```
 
 ### Footnote (not supported in VS Code)
+
 Footnotes create a reference link that takes you to a note at the bottom of the page, like this:
 
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
 
-
+You don’t have to put footnotes at the end of the document. You can put them anywhere except inside other elements like lists, blockquotes, and tables.
 
 ### Strikethrough
 
-~~The world is flat.~~
+~~Just need two tildes.~~
+VS Code supports it but sometimes behaves oddly.
 
 ### Task List (not supported in VS Code)
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+* [x] Write the press release
+* [ ] Update the website
+* [ ] Contact the media
 
 ### Emoji (not supported in VS Code)
 
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+That is so funny! \:joy:
 
 
-## Extended Syntax NOT Working on github and VS Code
-
+## Extended Syntax NOT Working on GitHub and VS Code
 
 ### Highlight
 
 I need to highlight these ==very important words==.
+ALT:
+I need to highlight these <mark>very important words</mark>.
 
 ### Subscript
 
-H~2~O
+H~~2~~O
+ALT: H<sub>2</sub>O
 
 ### Superscript
 
 X^2^
-
+ALT: X<sup>2</sup>
 
 ### Heading ID
 
 ### My Great Heading {#custom-id}
 
-### Definition List
-here i dont need to style what is def tile and what is definition it will be rendered as a definition list automatically
+You can link to headings with custom IDs in the file by creating a standard link with a number sign (#) followed by the custom heading ID. These are commonly referred to as anchor links.
 
+`[Heading IDs](#custom-id)` [Heading IDs](#custom-id)
+Other websites can link to the heading by adding the custom heading ID to the full URL of the webpage (e.g., [Heading IDs](https://www.markdownguide.org/extended-syntax#heading-ids)).
+
+### Definition List
+
+Here I don’t need to style what is a term and what is a definition; it will be rendered as a definition list automatically.
 
 term
 : definition
