@@ -405,7 +405,7 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
 
-# Automatic URL to Link
+### Automatic URL to Link
 
 Just paste the URL and it will be converted to a link automatically:
 [http://www.example.com](http://www.example.com)
@@ -493,7 +493,7 @@ term
 
 ## ⚠ Works but Deprecated
 
-## Center
+### Center
 
 Markdown has no direct way to center text, but HTML can be used:
 
@@ -503,7 +503,7 @@ Markdown has no direct way to center text, but HTML can be used:
 
 <center>This text is centered.</center>
 
-## Color
+### Color
 
 ```html
 <font color="red">This text is red!</font>
