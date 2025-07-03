@@ -56,3 +56,33 @@ Markdown has no direct way to center text, but HTML can be used:
 ```
 
 <font color="red">This text is red!</font>
+
+# Comments
+
+Here's a paragraph that will be visible.
+
+[This is a comment that will be hidden.]: # 
+
+And here's another paragraph that's visible.
+
+# Symbols
+Not supported by Markdown, but you can use HTML entities to display special characters or symbols.
+
+Here’s a partial list of HTML entities for symbols:
+
+Copyright (©) — &copy;
+Registered trademark (®) — &reg;
+Trademark (™) — &trade;
+Euro (€) — &euro;
+Left arrow (←) — &larr;
+Up arrow (↑) — &uarr;
+Right arrow (→) — &rarr;
+Down arrow (↓) — &darr;
+Degree (°) — &#176;
+Pi (π) — &#960;
+
+# Video
+
+For embedding videos, you can use the following Markdown syntax. Replace `YOUTUBE-ID` with the actual ID of the YouTube video you want to embed.
+`[![Image alt text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID)`
+[![Less Than Jake — Scott Farcas Takes It On The Chin](https://img.youtube.com/vi/PYCxct2e0zI/0.jpg)](https://www.youtube.com/watch?v=PYCxct2e0zI)
