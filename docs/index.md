@@ -183,15 +183,15 @@ If you want a list item starting with a number and period (not list numbering), 
 
   ```markdown
   [hobbit-hole][1] when i click this it will take me where the 1 is defined
-  ...
+
   [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
   ```
 
 ###### Renders as: 
 
-⇒ [hobbit-hole][1] when i click this it will take me where the 1 is defined   
-  ...   
-⇒ [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles" 
+[hobbit-hole][1] when i click this it will take me where the 1 is defined   
+
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles" 
 
 6. **Best Practices**
 
