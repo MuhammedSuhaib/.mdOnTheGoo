@@ -114,7 +114,7 @@ If you want a list item starting with a number and period (not list numbering), 
 - 1968\. A great year!
 ```
 
-Renders as:
+###### Renders as: 
 
 ⇒ 1968\. A great year!
 
@@ -127,7 +127,7 @@ Renders as:
 ```markdown
 [Link Text](URL)
 ```
-Renders as:
+###### Renders as: 
 
 
 ⇒ [Link Text](URL)
@@ -139,7 +139,7 @@ Renders as:
 [Link Text](URL "Title")
 ```
 
-Renders as:
+###### Renders as: 
 
 
 ⇒ You will see a tooltip when you hover over the link below.  
@@ -152,7 +152,7 @@ Renders as:
 <email@example.com>
 ```
 
-Renders as:
+###### Renders as: 
 
 ⇒ <https://example.com>   
 ⇒ <email@example.com>
@@ -164,7 +164,7 @@ Renders as:
 * Italic: `*[text](URL)*`
 * Code style: ``[`code`](URL)``
 
-Renders as:
+###### Renders as: 
 
 ⇒  Bold: **[text](URL)**  
 ⇒  Italic: *[text](URL)*  
@@ -187,7 +187,7 @@ Renders as:
   [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
   ```
 
-Renders as:
+###### Renders as: 
 
 ⇒ [hobbit-hole][1] when i click this it will take me where the 1 is defined   
   ...   
@@ -261,7 +261,7 @@ To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are
 | Paragraph   | Text        | And more      |
 ```
 
-Renders as:
+###### Renders as: 
 
 | Syntax    | Description |
 | --------- | ----------- |
@@ -290,21 +290,15 @@ To create a blockquote, add `>` before a paragraph.
 Include blank lines **before and after** for compatibility.
 
 > 1 blockquote  
->> 2 blockquote  
->>> 3 blockquote  
->>>> 4 blockquote  
->>>>> 5 blockquote  
->>>>>> 6 blockquote  
->>>>>>> 7 blockquote  
->>>>>>>> 8 blockquote  
->>>>>>>>> 9 blockquote  
->>>>>>>>>> 10 blockquote  
->>>>>>>>>>> 11 blockquote  
->>>>>>>>>>>> 12 blockquote  
->>>>>>>>>>>>> 13 blockquote  
->>>>>>>>>>>>>> 14 blockquote  
->>>>>>>>>>>>>>> Most renderers support 10–15 levels  but vscode supports 100 levels.
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 100🤯
+>> 2    
+>>> 3    
+>>>> 4    
+>>>>> 5    
+>>>>>> 6    
+>>>>>>> 7    
+>>>>>>>> 8    
+>>>>>>>>> 9    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 💯
 ### Blockquotes with Other Elements
 
 Blockquotes can include other Markdown elements, but **not all will render properly**.  
@@ -320,7 +314,7 @@ Here's a paragraph that will be visible.
 And here's another paragraph that's visible.
 ```
 
-Renders as:
+###### Renders as: 
 
 Here's a paragraph that will be visible.
 
@@ -354,7 +348,7 @@ Example:
 ```markdown
 ``Use `code` in code block.``
 ```
-Renders as:
+###### Renders as: 
 
 ⇒   ``Use `<code>` in code block.``
 
@@ -408,4 +402,4 @@ You can’t use Markdown syntax inside block-level HTML tags. For example,
 ```
 
 
-[Cheatsheet](https://github.com/MuhammedSuhaib/.mdOnTheGoo/blob/main/readme.md)
+[Click here for cheat sheet and Advanced Features](https://github.com/MuhammedSuhaib/.mdOnTheGoo/blob/main/readme.md)

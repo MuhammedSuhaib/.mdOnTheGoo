@@ -66,7 +66,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Table
 
-* [Click here for Tables](docs/markdownGo.md#tables)
+* [Click here for Tables](docs/index.md#tables)
 
 ### Fenced Code Block (Language-specific code block)
 
@@ -111,19 +111,27 @@ That is so funny! \:joy:
 
 ### Highlight
 
-I need to highlight these ==very important words==.
-ALT:
-I need to highlight these <mark>very important words</mark>.
+I need to highlight these ==very important words==.   (Not Working ❌)
+
+**Alternately You can use :**   
+
+I need to highlight these <mark>very important words</mark>. (Working ✅)
 
 ### Subscript
 
-H~~2~~O
-ALT: H<sub>2</sub>O
+H~~2~~O   (Not Working ❌)
+
+**Alternatively You can use :**    
+
+H<sub>2</sub>O (Working ✅)
 
 ### Superscript
 
-X^2^
-ALT: X<sup>2</sup>
+X^2^   (Not Working ❌)
+
+**Alternatively You can use :**    
+
+X<sup>2</sup> (Working ✅)
 
 ### Heading ID
 
@@ -138,10 +146,10 @@ Other websites can link to the heading by adding the custom heading ID to the fu
 
 Here I don’t need to style what is a term and what is a definition; it will be rendered as a definition list automatically.
 
-term
+term  
 : definition
 
-## ⚠ Works but Deprecated
+## ⚠ Works on Vscode but (not supported on Github)
 
 ### Center
 
@@ -162,3 +170,16 @@ Markdown has no direct way to center text, but HTML can be used:
 <font color="red">This text is red!</font>
 
 ---
+## jekyll-theme
+
+To add a jekyll theme , you can add the following line to your `_config.yml` file:
+
+```yaml
+theme: jekyll-theme-theme-name
+```
+
+this will apply the specified theme to your Jekyll site. Make sure to replace `theme-name` with the actual name of the theme you want to use.
+
+Available themes can be found at [Jekyll Themes](https://pages.github.com/themes/).
+Jekyll themes only affect deployed sites, not the normal `.md` files in a repo.
+normal `.md` files use GitHub’s default markdown renderer, not Jekyll.
