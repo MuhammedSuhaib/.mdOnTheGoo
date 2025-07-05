@@ -93,7 +93,7 @@ You don’t have to put footnotes at the end of the document. You can put them a
 
 ### Strikethrough
 
-~~Just need two tildes.~~
+~~Just need two tildes.~~   
 VS Code supports it but sometimes behaves oddly.
 
 ### Task List (not supported in VS Code)

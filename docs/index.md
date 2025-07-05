@@ -298,7 +298,8 @@ Include blank lines **before and after** for compatibility.
 >>>>>>> 7    
 >>>>>>>> 8    
 >>>>>>>>> 9    
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 💯
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 💯    
+
 ### Blockquotes with Other Elements
 
 Blockquotes can include other Markdown elements, but **not all will render properly**.  
