@@ -1,3 +1,5 @@
+https://muhammedsuhaib.github.io/.mdOnTheGoo/
+
 # Headings
 
 There are two ways to create headings:
@@ -43,7 +45,7 @@ To create a line break, use one of these:
 
 # Spaces
 
-Use &nbsp; to add a single space between words or elements.
+Use `&nbsp;` to add a single space between words or elements.
 
 Or 
 
@@ -55,7 +57,6 @@ Hi,   I  am  using             a lot
 
       ....
 </pre>
-
 
 ---
 
@@ -112,12 +113,11 @@ If you want a list item starting with a number and period (not list numbering), 
 - 1968\. A great year!
 ```
 
-renders as:
+Renders as:
 
-* 1968\. A great year!
+⇒ 1968\. A great year!
 
 ---
-
 
 # Links 
 
@@ -126,12 +126,23 @@ renders as:
 ```markdown
 [Link Text](URL)
 ```
+Renders as:
+
+
+⇒ [Link Text](URL)
+
 
 2. **Link with title (tooltip)**
 
 ```markdown
 [Link Text](URL "Title")
 ```
+
+Renders as:
+
+
+⇒ You will see a tooltip when you hover over the link below.  
+⇒ [Link Text](URL "Title") 
 
 3. **Auto-links for URLs or emails**
 
@@ -140,11 +151,24 @@ renders as:
 <email@example.com>
 ```
 
+Renders as:
+
+⇒ <https://example.com>   
+⇒ <email@example.com>
+
+
 4. **Formatting links**
 
 * Bold: `**[text](URL)**`
 * Italic: `*[text](URL)*`
 * Code style: ``[`code`](URL)``
+
+Renders as:
+
+⇒  Bold: **[text](URL)**  
+⇒  Italic: *[text](URL)*  
+⇒  Code style: ``[`<code>`](URL)``
+
 
 5. **Reference-style links** (split in two parts)
 
@@ -162,12 +186,17 @@ renders as:
   [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
   ```
 
+Renders as:
+
+⇒ [hobbit-hole][1] when i click this it will take me where the 1 is defined   
+  ...   
+⇒ [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles" 
+
 6. **Best Practices**
 
 * Encode spaces as `%20` in URLs
 * Encode parentheses as `%28` and `%29` or use HTML `<a>` tags
 * Avoid spaces in URLs directly
-
 
 
 # Images
@@ -184,6 +213,11 @@ renders as:
 ![Trail](/path/image.jpg)  
 *This is the caption.*
 ```
+For example:
+
+⇒ ⇢⇢ ⇢⇢  ⇢⇢  ⇢⇢  ⇢⇢   ![Mind-Blowing Experiment](https://img.youtube.com/vi/kn1oT-VGxhI/0.jpg)  
+⇒ ⇢⇢ ⇢⇢  ⇢⇢  ⇢⇢  ⇢⇢   *How 1 Pixel Actually Looks Like!*
+
 
 * To make the image a **link**, wrap the image Markdown in `[ ]` and add the link in `( )`:
 
@@ -225,6 +259,8 @@ To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 ```
+
+Renders as:
 
 | Syntax    | Description |
 | --------- | ----------- |
@@ -275,6 +311,16 @@ Test as needed.
 
 # Comments
 
+```markdown
+Here's a paragraph that will be visible.
+
+[This is a comment that will be hidden.]: # 
+
+And here's another paragraph that's visible.
+```
+
+Renders as:
+
 Here's a paragraph that will be visible.
 
 [This is a comment that will be hidden.]: # 
@@ -286,16 +332,16 @@ Not supported by Markdown, but you can use HTML entities to display special char
 
 Here’s a partial list of HTML entities for symbols:
 
-Copyright (©) — &copy;
-Registered trademark (®) — &reg;
-Trademark (™) — &trade;
-Euro (€) — &euro;
-Left arrow (←) — &larr;
-Up arrow (↑) — &uarr;
-Right arrow (→) — &rarr;
-Down arrow (↓) — &darr;
-Degree (°) — &#176;
-Pi (π) — &#960;
+Copyright (©) — &copy;    
+Registered trademark (®) — &reg;    
+Trademark (™) — &trade;   
+Euro (€) — &euro;   
+Left arrow (←) — &larr;   
+Up arrow (↑) — &uarr;   
+Right arrow (→) — &rarr;    
+Down arrow (↓) — &darr;   
+Degree (°) — &#176;   
+Pi (π) — &#960;   
 
 # Code Blocks
 
@@ -307,20 +353,33 @@ Example:
 ```markdown
 ``Use `code` in code block.``
 ```
+Renders as:
+
+⇒   ``Use `<code>` in code block.``
 
 # Escaping Characters
 
+```
+* Without the backslash, this would be a bullet in an unordered list.
+```
+↴
+* Without the backslash, this would be a bullet in an unordered list.   
+↴  
 \* Without the backslash, this would be a bullet in an unordered list.
 The rendered output looks like this:
 
-* Without the backslash, this would be a bullet in an unordered list.
+```
+\* Without the backslash, this would be a bullet in an unordered list.
+The rendered output looks like this:
+```
 
 Characters You Can Escape
 You can use a backslash to escape the following characters.
 ```
 Character	Name
+
 \	backslash
-`	backtick (see also escaping backticks in code)
+`	backtick 
 *	asterisk
 _	underscore
 { }	curly braces
@@ -332,7 +391,7 @@ _	underscore
 -	minus sign (hyphen)
 .	dot
 !	exclamation mark
-|	pipe (see also escaping pipe in tables)
+|	pipe 
 
 ```
 # HTML
@@ -340,8 +399,12 @@ For security reasons, not all Markdown applications support HTML in Markdown doc
 
 Use blank lines to separate block-level HTML elements like `<div>`, `<table>`, `<pre>`, and `<p>` from the surrounding content. Try not to indent the tags with tabs or spaces — that can interfere with the formatting.
 
-You can’t use Markdown syntax inside block-level HTML tags. For example, <p>italic and **bold**</p> won’t work.
+You can’t use Markdown syntax inside block-level HTML tags. For example,
+`*italic* and **bold**` won’t work. in html
 
+```html
+<p>*italic* and **bold**</p>
+```
 
 <br>
 <br>
@@ -510,6 +573,5 @@ Markdown has no direct way to center text, but HTML can be used:
 ```
 
 <font color="red">This text is red!</font>
-
 
 ---
