@@ -108,7 +108,8 @@ Create ordered lists by starting each item with `1.` followed by a space.
 | ----------- | --------------- |
 | `1.`        | `1)`            |
 
-If you want a list item starting with a number and period (not list numbering), escape the period with a backslash:
+> If you want a list item starting with a number and period (not list numbering), escape the period with a backslash.
+Because the compiler interprets numbers followed by a dot as Roman numerals.
 
 ```markdown
 - 1968\. A great year!
@@ -287,14 +288,17 @@ You can add a list inside a table cell by using HTML tags, because directly addi
 ## Blockquotes
 
 To create a blockquote, add `>` before a paragraph.  
-Include blank lines **before and after** for compatibility.
+Include blank lines **before and after** for compatibility.   
+If there's an empty line *within* the quotes, a `>` will also appear before that empty line.
 
 > 1 blockquote  
 >> 2    
 >>> 3    
+>
 >>>> 4    
 >>>>> 5    
 >>>>>> 6    
+>
 >>>>>>> 7    
 >>>>>>>> 8    
 >>>>>>>>> 9    
