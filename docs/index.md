@@ -244,11 +244,10 @@ For embedding videos, you can use the following Markdown syntax. Replace `YOUTUB
 
 ## Tables
 
-To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate columns. For compatibility, add a pipe at both ends of the row.
-You can align text left, right, or center by adding a colon (:) to the left, right, or both sides of the hyphens in the header row.
+To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate columns. For compatibility, add a pipe at both ends of the row.         
+You can align text left, right, or center by adding a colon (:) to the left, right, or both sides of the hyphens in the header row.         
+To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are invisible in the rendered table.         
 
-⚠️ You can’t use headings, blockquotes, lists, horizontal rules, images, or most HTML tags inside tables.
-To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are invisible in the rendered table.
 
 ```md
 | Syntax | Description |
@@ -276,7 +275,9 @@ To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |      
 
-You can add a list inside a table cell by using HTML tags, because directly adding list elements (`*`, `-`, `+`) won't work. Same for `<br>` tags.
+⚠️ You can’t use headings, blockquotes, lists, horizontal rules, images, or most HTML tags inside tables.         
+You can add a list inside a table cell by using HTML tags, because directly adding list elements (`*`, `-`, `+`) won't work. Same for `<br>` tags.         
+
 
 ### Table of Contents
 
