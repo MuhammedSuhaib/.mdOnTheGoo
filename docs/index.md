@@ -317,7 +317,10 @@ If there's an empty line *within* the quotes, a `>` will also appear before that
 Blockquotes can include other Markdown elements, but **not all will render properly**.  
 Test as needed.
 
-## Comments
+## Comments         
+
+To comment in Markdown, use `[]` with `: #` like this: `[comment]: #` — it won’t render.      
+
 
 ```markdown
 Here's a paragraph that will be visible.
