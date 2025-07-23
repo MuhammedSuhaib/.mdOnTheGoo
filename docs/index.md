@@ -269,6 +269,7 @@ To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are
 | Header    | Title       |
 | Paragraph | Text        |      
 
+            
 
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: | 
