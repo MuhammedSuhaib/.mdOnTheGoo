@@ -267,7 +267,13 @@ To display a pipe (|) in a table, use its HTML code (`&#124;`) because pipes are
 | Syntax    | Description |
 | --------- | ----------- |
 | Header    | Title       |
-| Paragraph | Text        |
+| Paragraph | Text        |      
+
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: | 
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |      
 
 You can add a list inside a table cell by using HTML tags, because directly adding list elements (`*`, `-`, `+`) won't work. Same for `<br>` tags.
 
