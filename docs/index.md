@@ -295,7 +295,7 @@ You can add a list inside a table cell by using HTML tags, because directly addi
 
 ## Blockquotes
 
-To create a blockquote, add `>` before a paragraph.  
+To create a blockquote, add `>` followed by a space before a paragraph.  
 Include blank lines **before and after** for compatibility.   
 If there's an empty line *within* the quotes, a `>` will also appear before that empty line.
 
